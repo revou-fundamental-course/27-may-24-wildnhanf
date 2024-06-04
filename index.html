@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-style">
 
 <head>
     <meta charset="UTF-8">
@@ -25,13 +25,23 @@
         <!--Home-->
         <section id="home">
             <header>
-                <h1>Hello Everyone, Welcome to our website</h1>
+                <h1>Hi Wildan, Welcome to our website</h1>
             </header>
 
             <article>
                 <p>Ini merupakan kali pertama saya mempelajari coding</p>
 
                 <div class="banner-container"></div>
+
+                <script>
+                    var slideindex = 1;
+                    showDivs(slideindex);
+
+                    function showDivs(){
+                        var 1;
+                        var imgList = 
+                    }
+                </script>
             </article>
         </section>
 
@@ -45,18 +55,18 @@
             
             <article class="facility-list">
                <div>
-                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
+                <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;" class="facility-item"></div>
                 <h5>Cashless Payment</h5>
                </div>
 
                <div>
-                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
-                <h5>Cashless Payment</h5>
+                <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;" class="facility-item"></div>
+                <h5>Low Price</h5>
                </div>
 
                <div>
-                <div style="width: 50px; height: 50px; border: 1px solid black;"></div>
-                <h5>Cashless Payment</h5>
+                <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;" class="facility-item"></div>
+                <h5>Premium Facility</h5>
                </div>
             </article>
         </section>
@@ -64,6 +74,7 @@
         <hr>
     
         <!--Message Us-->
+        
         <section id="message-us">
             <header>
                 <h1>Message Us</h1>
@@ -72,10 +83,24 @@
             <section class="message-us-section">
                 <!--Form-->
                 <section>
-                    <form>
-                        <label>Name:</label>
-                        <input />
-                    </form>
+                    <div class="container">
+                        <div class="form-container">
+                            <form>
+                                <label for="name">Nama:</label>
+                                <input type="text" id="name" name="name" placeholder="Nama">
+                                <label for="dob">Tanggal Lahir:</label>
+                                <input type="date" id="dob" name="dob">
+                                <label for="gender">Jenis Kelamin:</label>
+                                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="perempuan">
+                                <label for="female">perempuan</label>
+                                <label for="message">Pesan:</label>
+                                <textarea id="message" name="message" placeholder="Pesan"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </section>
 
                 <!--Result-->
