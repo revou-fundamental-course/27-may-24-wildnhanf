@@ -1,6 +1,8 @@
 /* css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+
 .font-style{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -26,22 +28,36 @@ nav>section {
     background-repeat: no-repeat;
 }
 
+/*header*/
+
 .nav-item {
     border: 1px solid black;
     padding: 8px;
     border-radius: 8px;
     color: black;
     text-decoration: none;
+    display: flex;
 }
 
+/*home*/
+
 .banner-container {
-    height: 258px;
-    border: 1px solid black;
+    height: 458px;
+    border: 1px transparent;
+}
+
+.banner-img {
+    height: 458px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
 }
 
 .facility-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .facility-item {
@@ -67,7 +83,7 @@ nav>section {
 
 .container {
     display: flex;
-    
+
 }
 
 .form-container, .info-container {
@@ -111,4 +127,13 @@ nav>section {
 
 .form-container button:hover {
     background-color: #555;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 600px) {
+    .facility-list{
+        flex-direction: column;
+        align-items: center;
+    }
 }
