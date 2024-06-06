@@ -1,4 +1,7 @@
 /* css */
+
+/*font-style*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -12,6 +15,9 @@
 nav {
     display: flex;
     justify-content: space-between;
+    border: 1px;
+    height: auto;
+    background-color: aquamarine;
 }
 
 nav>section {
@@ -37,6 +43,7 @@ nav>section {
     color: black;
     text-decoration: none;
     display: flex;
+    background-color: whitesmoke;
 }
 
 /*home*/
@@ -61,7 +68,8 @@ nav>section {
 }
 
 .facility-item {
-    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*result*/
@@ -93,11 +101,12 @@ nav>section {
 }
 
 .form-container h1 {
-    margin-top: 0;
+    margin-top: 1px;
+    display: flex;
 }
 
 .form-container label {
-    display: block;
+    display: flex;
     margin-top: 10px;
 }
 
@@ -113,11 +122,11 @@ nav>section {
 }
 
 .form-container input[type="radio"] {
-    margin: 0 10px 0 0;
+    margin: 10px;
 }
 
 .form-container button {
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #333;
     color: white;
     border: none;
@@ -127,6 +136,21 @@ nav>section {
 
 .form-container button:hover {
     background-color: #555;
+}
+
+/*footer*/
+
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px;
+    height: 40px;
+    background-color: aquamarine;
+}
+
+.message-text {
+    text-decoration: none;
+    display: flex;
 }
 
 /*media query*/
