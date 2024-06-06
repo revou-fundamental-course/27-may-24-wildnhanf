@@ -23,7 +23,7 @@ nav>section {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url(/images/logo_revou.png);
+    background-image: url(/assets/logo_revou.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
